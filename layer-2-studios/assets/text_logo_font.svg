@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1536"
+   height="256"
+   viewBox="0 0 406.4 67.73333"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="Text_logo_mono.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#000000"
+     bordercolor="#00ff00"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="false"
+     inkscape:deskcolor="#3f3f3f"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="0.31888586"
+     inkscape:cx="1027.0132"
+     inkscape:cy="-130.14061"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="axonomgrid"
+       id="grid2"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="0.99999999"
+       spacingy="4.2333333"
+       empcolor="#0000ff"
+       empopacity="1"
+       color="#0096ff"
+       opacity="0.34117647"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       enabled="false"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-351.95271 : 135.46666 : 1"
+       inkscape:vp_y="0 : 999.99996 : 0"
+       inkscape:vp_z="586.58785 : 135.46666 : 1"
+       inkscape:persp3d-origin="135.46667 : -112.88888 : 1"
+       id="perspective20" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60.2074px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:10.7431;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       x="98.540627"
+       y="50.48391"
+       id="text39"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60.2074px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#ffffff;stroke:none;stroke-width:10.7431"
+         x="106.36053"
+         y="50.48391"
+         id="tspan39"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:60.2074px;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Bold';fill:#ffffff;stroke-width:10.7431"
+   id="tspan36">Layer</tspan><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:60.2074px;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;fill:#ffffff;stroke-width:10.7431"
+   id="tspan37">²</tspan> </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.1729px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:7.61325;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       x="304.41235"
+       y="51.799763"
+       id="text30"
+       inkscape:export-filename="Full_Logo.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.1729px;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;fill:#ffffff;stroke:none;stroke-width:7.61325"
+         x="304.41235"
+         y="51.799763"
+         id="tspan31">Studios</tspan></text>
+  </g>
+</svg>
