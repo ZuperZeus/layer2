@@ -49,10 +49,18 @@ body {
   font-family: var(--main-font);
   font-weight: 900;
   font-size: 10vmin;
-  text-shadow: 3px 3px 5px var(--icon-color-2);
+  text-align: center;
+  /* text-shadow: 3px 3px 5px var(--icon-color-1); */
   color: var(--main-text);
   margin: 30px;
   align-self:center;
+}
+.title:hover {
+  text-shadow: 3px 3px 5px var(--icon-color-3);
+  transition: text-shadow 0.1s ease;
+}
+.title:not(:hover) {
+  transition: text-shadow 0.5s ease;
 }
 button {
   font-family: var(--main-font);
@@ -67,12 +75,22 @@ button {
   border: 2px solid var(--alt-bg-1);
   box-shadow: 3px 3px 5px var(--alt-bg-2);
 }
- button:hover {
+button:hover {
   /* background-color: var(--icon-color-2); */
   transform: translate(3px,3px);
   color: var(--icon-color-3);
   border-color: var(--icon-color-2);
   box-shadow: 0px 0px 5px var(--icon-color-3);
+  transition: border-color 0.1s ease;
+  transition: color 0.1s ease;
+  transition: box-shadow 0.1s ease;
+  transition: transform 0.1s ease;
+}
+button:not(:hover) {
+  transition: border-color 0.5s ease;
+  transition: color 0.5s ease;
+  transition: box-shadow 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 ul {
@@ -146,13 +164,26 @@ img {
   font-weight: 900;
 }
 .header a {
+  display: inline-block;
   text-decoration:none;
   font-size: 18px;
   font-weight: 900;
 }
 .header a:hover {
+  transform: translate(3px,3px);
   color: var(--icon-color-3);
-} 
+  /* border-color: var(--icon-color-2); */
+  /* text-shadow: 0.03em 0.03em 0.05em var(--icon-color-4); */
+  transform: translate(0.06em,0.06em);
+  transition: color 0.1s ease;
+  transition: text-shadow 0.1s ease;
+  transition: transform 0.1s ease;
+}
+.button a:not(:hover) {
+  transition: color 0.5s ease;
+  transition: text-shadow 0.5s ease;
+  transition: transform 0.5s ease;
+}
 /* HEADER & FOOTER */
 
 /* WELCOME IMAGE */
@@ -225,6 +256,9 @@ img {
   margin: auto;
   margin: auto;
 }
+.website-description-body.reverse {
+  flex-wrap: wrap-reverse;
+}
 
 .website-description-main-par {
   display: flex;
@@ -253,6 +287,13 @@ img {
   margin-bottom: 12px;
   text-justify: center;
   font-family: var(--main-font);
+}
+.website-description-title:hover {
+  text-shadow: 3px 3px 5px var(--icon-color-3);
+  transition: text-shadow 0.1s ease;
+}
+.website-description-title:not(:hover) {
+  transition: text-shadow 0.5s ease;
 }
 .website-description-img {
   min-width: 300px;
@@ -451,17 +492,30 @@ img {
   padding: 20px;
   align-items: center;
 }
-.shop-card:hover {
-  /* background-color: var(--icon-color-2); */
-  color: var(--icon-color-4);
-  transform: translate(3px,3px);
-  border-color: var(--icon-color-2);
-  box-shadow: 0px 0px 5px var(--icon-color-3);
-}
-
 .shop-card:hover .shop-card-img {
   box-shadow: 0px 0px 5px var(--icon-color-3);
+  transition: box-shadow 0.1s ease;
+}
+.shop-card:not(:hover) .shop-card-img {
+  transition: box-shadow 0.1s ease;
 }
 
+.shop-card:hover {
+  /* background-color: var(--icon-color-2); */
+  transform: translate(3px,3px);
+  color: var(--icon-color-4);
+  border-color: var(--icon-color-2);
+  box-shadow: 0px 0px 5px var(--icon-color-3);
+  transition: border-color 0.1s ease;
+  transition: color 0.1s ease;
+  transition: box-shadow 0.1s ease;
+  transition: transform 0.1s ease;
+}
+.shop-card:not(:hover) {
+  transition: border-color 0.5s ease;
+  transition: color 0.5s ease;
+  transition: box-shadow 0.5s ease;
+  transition: transform 0.5s ease;
+}
 
 
