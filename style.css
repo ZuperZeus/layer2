@@ -52,7 +52,7 @@ body {
   text-align: center;
   /* text-shadow: 3px 3px 5px var(--icon-color-1); */
   color: var(--main-text);
-  margin: 30px;
+  margin: 50px 50px 20px 50px;
   align-self:center;
 }
 .title:hover {
@@ -235,7 +235,7 @@ img {
   display: flex;
   flex-direction: column;
   /* flex-wrap: wrap; */
-  padding: 60px 80px 80px 80px;
+  padding: 0px 80px;
   /* background-color: var(--main-bg); */
   /* background-image: url("./assets/start-background.jpg"); */
   color: var(--main-text);
@@ -253,8 +253,6 @@ img {
   /* flex: 1 1 300px; */
   padding: 12px;
   gap: 30px;
-  margin: auto;
-  margin: auto;
 }
 .website-description-body.reverse {
   flex-wrap: wrap-reverse;
