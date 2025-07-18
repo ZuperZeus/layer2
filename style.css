@@ -356,6 +356,7 @@ img {
 
 /* CALL TO ACTION */
 .call-to-action {
+  font-family: var(--main-font);
   background: var(--main-bg);
   padding: 0px 40px 40px 40px;
 }
