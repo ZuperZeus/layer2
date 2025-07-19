@@ -27,6 +27,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   background: var(--main-bg);
+  line-height: 1.6;
 }
 
 /* LOGO */
