@@ -5,45 +5,28 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Layer² Studios</title>
-    <link rel="icon" type="image/x-icon" href="./assets/logos/icon_logo.svg">
 		<link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/logos/icon_logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./script.js" defer></script>
+    <script src="./header_footer.js" defer></script>
 	</head>
 	<body>
-		<div class="header">
-			<ul class="header-left">
-        <li class="header-logo">
-          <a href="index.html">
-            <img src="./assets/logos/icon_logo.svg">
-          </a>
-        </li>
-				<li>
-          <a href="./index.html">
-            <div class="layer2">Layer²</div> <div class="Studios">Studios</div>
-          </a>
-        </li>
-        </a>
-			</ul>
-			<ul class="header-right">
-				<li><a href="./shop.html">Shop</a></li>
-				<li><a href="mailto:layersquaredstudios@gmail.com">Email</a></li>
-				<li><a href="tel:+12369694998">Call</a></li>
-			</ul>
-		</div>
+    <!-- updated by header_footer.js -->
+		<div class="header"></div>
+
 		<div class="welcome-img">
-      <!-- <img src="./assets/start-background.jpg"> -->
-      <!-- <div class="welcome-image-logo"> -->
-        <div class="layer2">Layer²</div> 
-        <div class="studios">Studios</div>
-      <!-- </div> -->
+      <div class="layer2">Layer²</div> 
+      <div class="studios">Studios</div>
     </div>
-    <div class="title">We 3D print <em>anything</em></div>
+
+    <div class="title animate lift-text">We 3D print <em>anything</em></div>
 		<div class="website-description">
       <div class="website-description-body">
           <div class="website-description-par">We are <div class="layer2">Layer²</div> <div class="studios">Studios</div>, a Victoria-based shop focused on solving <em>your</em> needs. From keychains to wall decor, we have whatever you can imagine. Whether you're looking for a custom gift, a unique piece to elevate your space, or a personalized product that reflects your style, we've got you covered. We specialize in small-batch, made-to-order creations using high-quality materials and precise 3D printing techniques to bring your ideas to life.
           <br>
           <br>
-          <a href="./shop.html"><button>Shop</button></a> 
+          <a href="./shop.html"><button class="animate push-button">Shop</button></a> 
         </div>
         <div class="website-description-img">
           <img class="website-description-img-inner" src="./assets/products/decoration_christmas/1.jpg">
@@ -53,27 +36,27 @@
 		</div>
 		
 		<div class="shop">
-      <div class="title">Our Products</div>
+      <div class="title animate lift-text">Our Products</div>
       <div class="shop-cards">
         <div class="shop-cards">
-          <div class="shop-card">
+          <div class="shop-card animate push-button">
             <img class="shop-card-img" src="./assets/products/keychain_bike/1.jpg">
             <div class="shop-card-text">Custom Logo Keychain</div>
             <div class="shop-card-text">Contact us for Pricing</div>
           </div>
-          <div class="shop-card">
+          <div class="shop-card animate push-button">
             <img class="shop-card-img" src="./assets/products/keychain_text/1.jpg">
             <div class="shop-card-text">Custom Name Keychain</div>
             <div class="shop-card-text">Contact us for Pricing</div>
           </div>
         </div>
         <div class="shop-cards">
-          <div class="shop-card">
+          <div class="shop-card animate push-button">
             <img class="shop-card-img" src="./assets/products/keychain_spotify/1.jpg">
             <div class="shop-card-text">Custom Spotify Keychain</div>
             <div class="shop-card-text">Contact us for Pricing</div>
           </div>
-          <div class="shop-card">
+          <div class="shop-card animate push-button">
             <img class="shop-card-img" src="./assets/products/toy_fidget_cube/1.jpg">
             <div class="shop-card-text">Fidget Cube</div>
             <div class="shop-card-text">Contact us for Pricing</div>
@@ -81,9 +64,11 @@
         </div>
       </div>
       <div class="see-all">
-        <button>
-          <a href="./shop.html">See all</a>
-        </button>
+        <a href="./shop.html">
+          <button class="animate push-button">
+            See all
+          </button>
+        </a>
       </div>
 		</div>
 		<!-- 
@@ -98,16 +83,14 @@
       <div class="call-to-action-box">
         <div class="call-to-action-text">
           <h4>Questions? Want a custom print?</h4>
-          <p>We can print your model, design custom parts, and sell in bulk. If you have any questions or would like a quote, please email us below! </p>
+          <p>We can print your model, design custom parts, and sell in bulk. If you have any questions or would like a quote, email us at layersquaredstudios@gmail.com or using the button below!</p>
         </div>
         <a href="mailto:layersquaredstudios@gmail.com">
-        <button>Email Us!</button>
+        <button class="animate push-button">Email Us!</button>
         </a>
       </div>
     </div>
 
-		<div class="footer">
-			<a href="https://zuperzeus.com" target="_blank" rel="noopener noreferrer">Copyright @ ZuperZeus 2025</a>
-		</div>
+		<div class="footer"></div>
 	</body>
 </html>

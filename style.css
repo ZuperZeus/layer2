@@ -14,6 +14,33 @@
   --icon-color-4: #ff0000;
   --main-font: 'Comfortaa', Verdana, Arial, sans-serif;
   --text-font: Verdana, Arial, sans-serif;
+  
+  --animate-fast: border-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, text-shadow 0.1s ease, transform 0.1s ease;
+  --animate-slow: border-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, text-shadow 0.5s ease, transform 0.5s ease;
+}
+.push-text:hover 
+{
+  transform: translate(0.06em,0.06em);
+  color: var(--icon-color-3);
+}
+.push-button:hover 
+{
+  transform: translate(3px,3px);
+  color: var(--icon-color-3);
+  border-color: var(--icon-color-2);
+  box-shadow: 0px 0px 5px var(--icon-color-3);
+}
+.lift-text:hover
+{
+  transform: translate(-0.03em,-0.03em);
+  text-shadow: 0.03em 0.03em 5px var(--icon-color-3);
+}
+.animate:hover {
+  transition: var(--animate-fast);
+}
+
+.animate:not(:hover) {
+  transition: var(--animate-slow);
 }
 
 body {
@@ -55,13 +82,6 @@ body {
   margin: 50px 50px 20px 50px;
   align-self:center;
 }
-.title:hover {
-  text-shadow: 3px 3px 5px var(--icon-color-3);
-  transition: text-shadow 0.1s ease;
-}
-.title:not(:hover) {
-  transition: text-shadow 0.5s ease;
-}
 button {
   font-family: var(--main-font);
   font-weight: 900;
@@ -75,27 +95,9 @@ button {
   border: 2px solid var(--alt-bg-1);
   box-shadow: 3px 3px 5px var(--alt-bg-2);
 }
-button:hover {
-  /* background-color: var(--icon-color-2); */
-  transform: translate(3px,3px);
-  color: var(--icon-color-3);
-  border-color: var(--icon-color-2);
-  box-shadow: 0px 0px 5px var(--icon-color-3);
-  transition: border-color 0.1s ease;
-  transition: color 0.1s ease;
-  transition: box-shadow 0.1s ease;
-  transition: transform 0.1s ease;
-}
-button:not(:hover) {
-  transition: border-color 0.5s ease;
-  transition: color 0.5s ease;
-  transition: box-shadow 0.5s ease;
-  transition: transform 0.5s ease;
-}
 
 ul {
   list-style-type: none;
-  display: flex;
   margin: 0;
   padding: 0;
   gap:15px;
@@ -124,6 +126,10 @@ img {
 
 
 /* HEADER & FOOTER */
+/* a.fa { */
+  /* font-size: 60px; */
+  /* color: red; */
+/* } */
 .header, .footer {
   display: flex;
   justify-content: space-between;
@@ -140,23 +146,41 @@ img {
   z-index: 999;
   background: linear-gradient(#ffffff20,#ffffff00);
   backdrop-filter: blur(20px);
-  /* color: var(--alt-text-1); */
-  /* text-shadow: 0px 0px 6px black; */
 }
 
 .footer {
-  justify-content: center;
+  justify-content: space-between;
+  color: var(--alt-text-1);
+  padding: 60px;
+  align-items: start;
+  flex-wrap: wrap-reverse;
+  font-size: 12px;
 }
 .footer a {
-  color: var(--alt-text-1);
-  padding: 15px;
+  display: inline-block;
+  padding-top: 10px;
   text-decoration: none;
+  font-size: 15px;
 }
-
+.footer-left {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-self: flex-start; */
+  font-size: 24px;
+  font-weight: 900;
+}
+.footer-right {
+  justify-self: flex-end;
+  font-size: 24px;
+  font-weight: 900;
+}
 .header-logo {
   flex: 0 0 50px;
 }
 
+.header ul {
+  display: flex;
+}
 .header-left {
   display: flex;
   align-items: center;
@@ -168,21 +192,6 @@ img {
   text-decoration:none;
   font-size: 18px;
   font-weight: 900;
-}
-.header a:hover {
-  transform: translate(3px,3px);
-  color: var(--icon-color-3);
-  /* border-color: var(--icon-color-2); */
-  /* text-shadow: 0.03em 0.03em 0.05em var(--icon-color-4); */
-  transform: translate(0.06em,0.06em);
-  transition: color 0.1s ease;
-  transition: text-shadow 0.1s ease;
-  transition: transform 0.1s ease;
-}
-.button a:not(:hover) {
-  transition: color 0.5s ease;
-  transition: text-shadow 0.5s ease;
-  transition: transform 0.5s ease;
 }
 /* HEADER & FOOTER */
 
@@ -209,25 +218,6 @@ img {
   justify-content: center;
   align-items: center;
 }
-/* 
-.image-container img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.welcome-image-logo {
-  position: absolute;
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  background-color: #00000000; 
-  color: var(--alt-text-1);
-  padding: 10px 20px; 
-  font-size: 20px; 
-  text-align: center;
-} */
-
 /* WELCOME IMAGE */
 
 /* WEBSITE DESCRIPTION */
@@ -282,16 +272,9 @@ img {
 .website-description-title {
   font-size: 8vmin;
   font-weight: 900;
-  margin-bottom: 12px;
+  margin: 40px auto 0px auto;
   text-justify: center;
   font-family: var(--main-font);
-}
-.website-description-title:hover {
-  text-shadow: 3px 3px 5px var(--icon-color-3);
-  transition: text-shadow 0.1s ease;
-}
-.website-description-title:not(:hover) {
-  transition: text-shadow 0.5s ease;
 }
 .website-description-img {
   min-width: 300px;
