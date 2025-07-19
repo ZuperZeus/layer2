@@ -17,9 +17,9 @@ function updateHeader()
     </ul>
 
     <ul class="header-right">
+        <li><a href="./index.html" class="animate push-text">Home</a></li>
         <li><a href="./shop.html" class="animate push-text">Shop</a></li>
-        <li><a href="mailto:layersquaredstudios@gmail.com" class="animate push-text">Email</a></li>
-        <li><a href="tel:+12369694998" class="animate push-text">Call</a></li>
+        <li><a href="mailto:layersquaredstudios@gmail.com" class="animate push-text">Contact</a></li>
     </ul>
     `;
 }
@@ -29,16 +29,16 @@ function updateFooter()
     container.innerHTML = `
     <ul class="footer-left">
         <li class="animate push-text">
-            <a href="https://layer2.ca">Copyright @ <div class="layer2">Layer²</div> <div class="studios">Studios</div> 2025</a>
+            <a href="./index.html">Copyright @ <div class="layer2">Layer²</div> <div class="studios">Studios</div> 2025</a>
         </li>
         <li>
           <div class="animate push-text">
-              <a href="https://layer2.ca">
+              <a href="./index.html">
                   Home
               </a>
           </div>
           <div class="animate push-text">
-              <a href="https://layer2.ca/shop.html">
+              <a href="./shop.html">
                   Shop
               </a>
           </div>
