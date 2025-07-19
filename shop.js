@@ -8,6 +8,8 @@ function updateProducts()
     data.forEach(item => {
       const card = document.createElement('div');
       card.classList.add('shop-card');
+      card.classList.add('animate');
+      card.classList.add('push-button');
 
       card.innerHTML = `
       <img class="shop-card-img" src="./assets/products/${item.folder}/1.jpg">

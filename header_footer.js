@@ -33,9 +33,14 @@ function updateFooter()
         </li>
         <li>
           <div class="animate push-text">
-          <a href="./index.html">
-          Home
-          </a>
+              <a href="https://layer2.ca">
+                  Home
+              </a>
+          </div>
+          <div class="animate push-text">
+              <a href="https://layer2.ca/shop.html">
+                  Shop
+              </a>
           </div>
         </li>
         </a>
