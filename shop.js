@@ -14,6 +14,7 @@ function updateProducts()
       card.innerHTML = `
       <img class="shop-card-img" src="./assets/products/${item.folder}/1.jpg">
       <div class="shop-card-text"><a href="#">${item.title}</a></div>
+      <div class="shop-card-text">Contact for pricing</div>
         `;
           // <div class="shop-card-price">$${item.price.toFixed(2)}</div>
           // <div class="shop-card-details"></div>
