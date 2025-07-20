@@ -5,7 +5,7 @@ function updateHeader()
     <ul class="header-left">
         <li class="header-logo">
           <a href="index.html">
-            <img src="./assets/logos/icon_logo.svg">
+            <img src="./assets/img/icon_logo.svg">
           </a>
         </li>
         <li>
