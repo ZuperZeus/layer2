@@ -27,40 +27,49 @@ function updateFooter()
 {
     const container = document.querySelector('.footer');
     container.innerHTML = `
-    <ul class="footer-left">
-        <li class="animate push-text">
-            <a href="./index.html">Copyright @ <div class="layer2">Layer²</div> <div class="studios">Studios</div> 2025</a>
-        </li>
-        <li>
-          <div class="animate push-text">
-              <a href="./index.html">
-                  Home
-              </a>
-          </div>
-          <div class="animate push-text">
-              <a href="./shop.html">
-                  Shop
-              </a>
-          </div>
-        </li>
-        </a>
-    </ul>
+    <div class="footer-columns">
+        <ul class="footer-left">
+            <li>
+              <div class="animate push-text">
+                  <a href="./index.html">
+                      Home
+                  </a>
+              </div>
+              <div class="animate push-text">
+                  <a href="./shop.html">
+                      Shop
+                  </a>
+              </div>
+              <div class="animate push-text">
+                  <a href="mailto:layersquaredstudios@gmail.com">
+                      Contact
+                  </a>
+              </div>
+            </li>
+        </ul>
 
-    <ul class="footer-right">
-        <li class="animate push-text">
-            <a class="fa fa-envelope"></a>
-            <a href="mailto:layersquaredstudios@gmail.com"> : layersquaredstudios@gmail.com</a>
-            </li>
-        <li class="animate push-text">
-            <a class="fa fa-phone"></a>
-            <a href="tel:+12369694998"> : +1 236 969 4998</a>
-            </li>
-        <li class="animate push-text">
-            <a class="fa fa-instagram"></a>
-            <a href="https://www.instagram.com/layer2studios/" target="_blank" rel="noopener norefferer"> : @layer2studios </a>
-            </li>
-    </ul>
+        <ul class="footer-right">
+            <li class="animate push-text">
+                <a class="fa fa-envelope"></a>
+                <a href="mailto:layersquaredstudios@gmail.com">layersquaredstudios@gmail.com</a>
+                </li>
+            <li class="animate push-text">
+                <a class="fa fa-phone"></a>
+                <a href="tel:+12369694998">+1 236 969 4998</a>
+                </li>
+            <li class="animate push-text">
+                <a class="fa fa-instagram"></a>
+                <a href="https://www.instagram.com/layer2studios/" target="_blank" rel="noopener norefferer">layer2studios </a>
+                </li>
+        </ul>
+    </div>
+        <div class="copyright">
+            <a href="./index.html">© Layer² Studios 2025</a>
+        </div>
     `;
+    // <div class="copyright">
+        // <a href="./index.html">© Layer² Studios 2025</a>
+    // </div>
 }
 window.addEventListener('DOMContentLoaded', () => updateHeader());
 window.addEventListener('DOMContentLoaded', () => updateFooter());
