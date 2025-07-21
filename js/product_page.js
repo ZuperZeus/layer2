@@ -1,7 +1,13 @@
-function getProductQuery() 
+function getURLQuery(key) 
 {
     const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(`id`);
+    return urlParams.get(key);
+}
+function addURLQuery(key,val)
+{
+    const urlParams = new URLSearchParams(window.location.search);
+    urlParams.append(key,val);
+    window.location.search=urlParams;
 }
 function getTricolorText(triRGB)
 {
@@ -17,7 +23,7 @@ function generateProductPage()
 {
     const product = fetch('/data/products.json')
         .then(response => response.json())
-        .then(products => products.find(p => p.id === getProductQuery()))
+        .then(products => products.find(p => p.id === getURLQuery('id')))
         .then(product => {
             if (product) {
                 const productSection = document.querySelector('#product');
@@ -39,22 +45,20 @@ function generateProductPage()
                     .then(colors => {
                         const colorsDiv = document.querySelector('.color-select');
                         colors.forEach(color => {
+                            const colorCard = document.createElement('div');
+                            colorCard.addEventListener(onclick, () => addURLQuery('color',`${color.id}`))
+                            colorCard.classList.add("color-card");
+                            const colorCircle = document.createElement('div');
+                            colorCircle.classList.add("color-circle");
+                            // const card = document.createElement('a');
                             if(!color.tricolor)
                             {
-                                const colorCard = document.createElement('div');
-                                colorCard.classList.add("color-card");
-                                const colorCircle = document.createElement('div');
-                                colorCircle.classList.add("color-circle");
                                 colorCircle.style=`background:${color.rgb};`;
                                 colorCard.appendChild(colorCircle);
                                 colorsDiv.appendChild(colorCard);
                             }
                             else
                             {
-                                const colorCard = document.createElement('div');
-                                colorCard.classList.add("color-card");
-                                const colorCircle = document.createElement('div');
-                                colorCircle.classList.add("color-circle");
                                 colorCircle.style=getTricolorText(color.rgb);
                                 colorCard.appendChild(colorCircle);
                                 colorsDiv.appendChild(colorCard);
