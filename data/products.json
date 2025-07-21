@@ -21,7 +21,7 @@
     "title": "Dumpling Keychain",
     "section": "keychain",
     "id": "keychain_dumpling",
-    "description":"A cute dumpling! Get them hot!",
+    "description":"A cute dumpling! Get them while they're hot!",
     "price": 9.99,
     "colors": ["green", "yellow", "black", "blue"],
     "available": true
