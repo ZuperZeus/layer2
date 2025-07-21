@@ -19,13 +19,13 @@ function updateHeaderTextColor() {
   const scrollY = window.scrollY || window.pageYOffset;
   const welcomeBottom = welcome.offsetTop + welcome.offsetHeight;
 
-  // If header is over the welcome image (dark bg), set text white, else black
+  responsiveColor="var(--main-text)";
   if (scrollY < welcomeBottom-header.offsetHeight/2) {
-    header.style.color = 'var(--alt-text-1)';  // dark background → white text
-    
+    responsiveColor = 'var(--alt-text-1)';
   } else {
-    header.style.color = 'var(--main-text)';  // light background → black text
+    responsiveColor = 'var(--alt-text-1)';
   }
+  header.style.color = responsiveColor;
 }    
 
 // Run on load and scroll
