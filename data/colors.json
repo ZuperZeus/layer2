@@ -1,84 +1,98 @@
 [
   {
     "name": "Black",
+    "id": "black",
     "tricolor": false,
     "rgb": "#000000",
     "available": true
   },
   {
     "name": "White",
+    "id": "white",
     "tricolor": false,
     "rgb": "#ffffff",
     "available": true
   },
   {
     "name": "Red",
+    "id": "red",
     "tricolor": false,
     "rgb": "#ff0000",
     "available": true
   },
   {
     "name": "Orange",
+    "id": "orange",
     "tricolor": false,
     "rgb": "#ff8000",
     "available": true
   },
   {
     "name": "Yellow",
+    "id": "yellow",
     "tricolor": false,
     "rgb": "#ffff00",
     "available": true
   },
   {
     "name": "Green",
+    "id": "green",
     "tricolor": false,
     "rgb": "#00c000",
     "available": true
   },
   {
     "name": "Blue",
+    "id": "blue",
     "tricolor": false,
     "rgb": "#0000c0",
     "available": true
   },
   {
     "name": "Purple",
+    "id": "purple",
     "tricolor": false,
     "rgb": "#720099",
     "available": true
   },
   {
     "name": "Pink",
+    "id": "pink",
     "tricolor": false,
     "rgb": "#ff00ff",
     "available": true
   },
   {
     "name": "Light Pink",
+    "id": "light-pink",
     "tricolor": false,
     "rgb": "#ff94ff",
     "available": true
   },
   {
     "name": "Digital Rainbow",
+    "id": "digital-rainbow",
     "tricolor": true,
     "rgb": "#ff0000,#00ff00,#0000ff",
     "available": true
   },
   {
     "name": "Rosy Nature",
+    "id": "rosy-nature",
     "tricolor": true,
     "rgb": "#c4bb00,#00ad00,#ff6eff",
     "available": true
   },
   {
     "name": "Dark Gold",
+    "id": "dark-gold",
     "tricolor": true,
     "rgb": "#c4bb00,#ff0000,#000000",
     "available": true
   },
   {
     "name": "Ultra Metallic",
+    "id": "ultra-metallic",
     "tricolor": true,
     "rgb": "#c4bb00,#b2bbc2,#ff9e51",
     "available": true
