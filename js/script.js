@@ -1,6 +1,6 @@
 function adjustWelcomeHeight() {
-  const header = document.querySelector('.header');
-  const welcome = document.querySelector('.welcome-img');
+  const header = document.querySelector('#header');
+  const welcome = document.querySelector('.welcome-section');
   const headerHeight = header.offsetHeight;
   welcome.style.marginTop = `-${headerHeight}px`;
   welcome.style.paddingTop = `${headerHeight}px`;
@@ -11,8 +11,8 @@ window.addEventListener('load', adjustWelcomeHeight);
 window.addEventListener('resize', adjustWelcomeHeight);
 
 function updateHeaderTextColor() {
-  const header = document.querySelector('.header');
-  const welcome = document.querySelector('.welcome-img');
+  const header = document.querySelector('#header');
+  const welcome = document.querySelector('.welcome-section');
 
   if (!header || !welcome) return;
 
