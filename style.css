@@ -99,8 +99,9 @@ button:not(:hover) {
 
 .title:hover {
   transition: border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
-  transform: translate(-0.03em, -0.03em);
-  text-shadow: 0.03em 0.03em 0.1em var(--icon-color-3);
+  transform: translate(-0.06em, -0.06em);
+  color: var(--icon-color-2);
+  text-shadow: 0.06em 0.06em 0em var(--icon-color-3), 0.12em 0.12em 0em var(--icon-color-4);
 }
 
 .title:not(:hover) {
