@@ -15,10 +15,12 @@ function updateHeader()
         </li>
     </ul>
 
+
     <ul class="header-right">
         <li><a href="/index.html">Home</a></li>
         <li><a href="/shop.html">Shop</a></li>
         <li><a href="/services.html">Services</a></li>
+        <li><a href="/about.html">About</a></li>
     </ul>
     `;
 }
@@ -28,26 +30,10 @@ function updateFooter()
     container.innerHTML = `
     <div class="footer-columns">
         <ul class="footer-column">
-            <li>
-                <a href="/index.html">
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href="/shop.html">
-                    Shop
-                </a>
-            </li>
-            <li>
-                <a href="/services.html">
-                    Services
-                </a>
-            </li>
-            <li>
-                <a href="mailto:layersquaredstudios@gmail.com">
-                    Contact
-                </a>
-            </li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/shop.html">Shop</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/about.html">About</a></li>
         </ul>
 
         <ul class="footer-column">
