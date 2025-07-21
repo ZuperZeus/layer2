@@ -170,6 +170,7 @@ button:not(:hover) {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  align-content: stretch;
   gap: 20px;
 }
 
@@ -185,6 +186,7 @@ button:not(:hover) {
 }
 
 .flex-content {
+  height: 100%;
   flex: 1 1 300px;
 }
 
@@ -349,6 +351,46 @@ button:not(:hover) {
 }
 
 .shop-card:not(:hover) {
+  transition: border-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, text-shadow 0.5s ease, transform 0.5s ease;
+}
+
+.color-select {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  gap: 12px;
+  margin: 10px 0px;
+  justify-content: center; /* centers the entire row if not full width */
+  align-content: center;
+}
+
+.color-card {
+  border-radius: 30px;
+  border: 2px solid var(--alt-bg-1);
+  box-shadow: 3px 3px 5px var(--alt-bg-2);
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  display: flex;
+}
+
+.color-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.color-card:hover {
+  transition: border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+  transform: translate(3px, 3px);
+  color: var(--icon-color-3);
+  border-color: var(--icon-color-2);
+  box-shadow: 0px 0px 5px var(--icon-color-3);
+  cursor: pointer;
+}
+
+.color-card:not(:hover) {
   transition: border-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, text-shadow 0.5s ease, transform 0.5s ease;
 }
 
