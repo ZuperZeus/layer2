@@ -4,7 +4,7 @@ function createProductCard(item) {
 
   card.innerHTML = `
     <div class="shop-card">
-      <img class="round-img" src="./assets/products/${item.id}/1.jpg">
+      <img class="round-img" src="./assets/products/${item.id}/1.jpg" alt="${item.title}" loading="lazy">
       <div class="text"><a href="#">${item.title}</a></div>
       <div class="text">Contact for pricing</div>
     </div>
