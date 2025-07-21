@@ -68,19 +68,19 @@
   {
     "name": "Rosy Nature",
     "tricolor": true,
-    "rgb": "#",
+    "rgb": "#c4bb00,#00ad00,#ff6eff",
     "available": true
   },
   {
     "name": "Dark Gold",
     "tricolor": true,
-    "rgb": "#",
+    "rgb": "#c4bb00,#ff0000,#000000",
     "available": true
   },
   {
     "name": "Ultra Metallic",
     "tricolor": true,
-    "rgb": "#",
+    "rgb": "#c4bb00,#b2bbc2,#ff9e51",
     "available": true
   }
 ]

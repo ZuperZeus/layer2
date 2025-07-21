@@ -186,7 +186,6 @@ button:not(:hover) {
 }
 
 .flex-content {
-  height: 100%;
   flex: 1 1 300px;
 }
 
@@ -220,7 +219,12 @@ button:not(:hover) {
 }
 
 .header-logo {
-  flex: 0 0 50px;
+  flex: 0 0 60px;
+}
+
+#header ul {
+  display: flex;
+  align-items: center;
 }
 
 #header ul {
@@ -231,6 +235,9 @@ button:not(:hover) {
 #header-left {
   display: flex;
   align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
   font-size: 24px;
   font-weight: 900;
 }

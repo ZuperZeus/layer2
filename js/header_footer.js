@@ -4,22 +4,21 @@ function updateHeader()
     container.innerHTML = `
     <ul class="header-left">
         <li class="header-logo">
-          <a href="index.html">
+          <a href="/index.html">
             <img src="./assets/img/icon_logo.svg">
           </a>
         </li>
         <li>
-          <a href="./index.html">
+          <a href="/index.html">
             <div class="layer2">Layer²</div> <div class="Studios">Studios</div>
           </a>
         </li>
-        </a>
     </ul>
 
     <ul class="header-right">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./shop.html">Shop</a></li>
-        <li><a href="mailto:layersquaredstudios@gmail.com">Contact</a></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/shop.html">Shop</a></li>
+        <li><a href="/services.html">Services</a></li>
     </ul>
     `;
 }
@@ -30,13 +29,18 @@ function updateFooter()
     <div class="footer-columns">
         <ul class="footer-column">
             <li>
-                <a href="./index.html">
+                <a href="/index.html">
                     Home
                 </a>
             </li>
             <li>
-                <a href="./shop.html">
+                <a href="/shop.html">
                     Shop
+                </a>
+            </li>
+            <li>
+                <a href="/services.html">
+                    Services
                 </a>
             </li>
             <li>
@@ -62,7 +66,7 @@ function updateFooter()
         </ul>
     </div>
         <div class="copyright">
-            <a href="./index.html">© Layer² Studios 2025</a>
+            <a href="/index.html">© Layer² Studios 2025</a>
         </div>
     `;
 }
