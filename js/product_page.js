@@ -5,16 +5,9 @@ function getURLQuery(key)
 }
 function addURLQuery(key,val)
 {
-    console.log(`adding url query ${key} -> ${val}`)
     const urlParams = new URLSearchParams(window.location.search);
     urlParams.set(key,val);
-    window.location.search=urlParams;
-}
-function getNewLink(key,val)
-{
-    const urlParams = new URLSearchParams(window.location.search);
-    urlParams.set(key,val);
-    return urlParams;
+    window.history.replaceState(`/product.html?${urlParams}`,'',`/product.html?${urlParams}`);
 }
 function getTricolorText(triRGB)
 {
@@ -30,12 +23,18 @@ function getColorCircle(color)
 {
     const colorCircle = document.createElement('div');
           colorCircle.classList.add("color-circle");
-          colorCircle.classList.add(color.id);
           if(!color.tricolor)
             colorCircle.style=`background:${color.rgb};`;
           else
             colorCircle.style=getTricolorText(color.rgb);
     return colorCircle;
+}
+function updateColorCircle(color)
+{
+    if(!document.querySelector(".color-selected .color-circle"))
+        document.querySelector(".color-selected").append(getColorCircle(color));
+    else
+        document.querySelector(".color-selected .color-circle").replaceWith(getColorCircle(color));
 
 }
 function generateProductPage() 
@@ -65,11 +64,14 @@ function generateProductPage()
                     .then(colors => {
                         const colorsDiv = document.querySelector('.color-display');
                         colors.forEach(color => {
-                            const colorCard = document.createElement('a');
-                                //   colorCard.addEventListener(onclick, () => addURLQuery('color',color.id));
-                                  colorCard.href = "/product.html?"+getNewLink('color',color.id);
+                            const colorCard = document.createElement('div');
+                                  colorCard.addEventListener('click', () => 
+                                  {
+                                    addURLQuery('color',color.id);
+                                    updateColorCircle(color);
+                                  });
+                                  //colorCard.href = "/product.html?"+getNewLink('color',color.id);
                                   colorCard.classList.add("color-card");
-                                  colorCard.classList.add(color.id);
                                   colorCard.appendChild(getColorCircle(color));
                             colorsDiv.appendChild(colorCard);
                         })
