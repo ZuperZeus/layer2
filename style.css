@@ -269,7 +269,7 @@ button:not(:hover) {
 }
 
 #header a {
-  font-size: min(3vw, 15px);
+  font-size: min(3vw, 18px);
   font-weight: 900;
 }
 
@@ -388,14 +388,19 @@ button:not(:hover) {
   transition: border-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, text-shadow 0.5s ease, transform 0.5s ease;
 }
 
-.color-select {
+.product-description {
+  max-width: 500px;
+}
+
+.color-display {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
   gap: 12px;
-  margin: 10px 0px;
+  margin: 12px 0px;
   justify-content: center; /* centers the entire row if not full width */
   align-content: center;
+  max-width: 364px;
 }
 
 .color-card {
@@ -406,6 +411,17 @@ button:not(:hover) {
   height: 40px;
   width: 40px;
   display: flex;
+}
+
+.color-selected {
+  border-radius: 30px;
+  border: 2px solid var(--alt-bg-1);
+  box-shadow: 3px 3px 5px var(--alt-bg-2);
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  max-width: 364px;
+  margin: 40px 0px;
 }
 
 .color-circle {
