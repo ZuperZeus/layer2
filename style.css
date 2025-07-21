@@ -269,7 +269,7 @@ button:not(:hover) {
 }
 
 #header a {
-  font-size: 18px;
+  font-size: min(3vw, 15px);
   font-weight: 900;
 }
 
