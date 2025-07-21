@@ -22,8 +22,6 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   margin: 0;
   color: var(--main-text);
   background: var(--main-bg);
@@ -262,6 +260,7 @@ button:not(:hover) {
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
+  width: 100vw;
   justify-self: flex-end;
   align-items: center;
   background-color: var(--alt-bg-1);
