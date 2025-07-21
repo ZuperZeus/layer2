@@ -1,0 +1,89 @@
+[
+  {
+    "name": "Black",
+    "tricolor": "false,
+    "rgb": "#000000",
+    "available": true
+  },
+  {
+    "name": "White",
+    "tricolor": "false,
+    "rgb": "#ffffff",
+    "available": true
+  },
+  {
+    "name": "Red",
+    "tricolor": "false,
+    "rgb": "#ff0000",
+    "available": true
+  },
+  {
+    "name": "Orange",
+    "tricolor": "false,
+    "rgb": "#ff8000",
+    "available": true
+  },
+  {
+    "name": "Yellow",
+    "tricolor": "false,
+    "rgb": "#ffff00",
+    "available": true
+  },
+  {
+    "name": "Green",
+    "tricolor": "false,
+    "rgb": "#00c000",
+    "available": true
+  },
+  {
+    "name": "Blue",
+    "tricolor": "false,
+    "rgb": "#0000c0",
+    "available": true
+  },
+  {
+    "name": "Purple",
+    "tricolor": "false,
+    "rgb": "#720099",
+    "available": true
+  },
+  {
+    "name": "Pink",
+    "tricolor": "false,
+    "rgb": "#ff00ff",
+    "available": true
+  },
+  {
+    "name": "Light Pink",
+    "tricolor": "false,
+    "rgb": "#ff94ff",
+    "available": true
+  },
+  {
+    "name": "Digital Rainbow",
+    "tricolor": "false,
+    "rgb": "#ff0000",
+    "rgb-2": "#00ff00",
+    "rgb-3": "#0000ff",
+    "available": true
+  },
+  {
+    "name": "Rosy Nature",
+    "tricolor": "false,
+    "rgb": "#",
+    "available": true
+  },
+  {
+    "name": "Dark Gold",
+    "tricolor": "false,
+    "rgb": "#",
+    "available": true
+  },
+  {
+    "name": "Ultra Metallic",
+    "tricolor": "false,
+    "rgb": "#",
+    "available": true
+  },
+]
+

@@ -17,8 +17,11 @@
   --text-font: Verdana, Arial, sans-serif;
 }
 
+html {
+  height: 100vh;
+}
+
 body {
-  height: 100%;
   display: flex;
   flex-direction: column;
   margin: 0;
