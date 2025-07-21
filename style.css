@@ -18,6 +18,9 @@
 }
 
 body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   color: var(--main-text);
   background: var(--main-bg);
@@ -60,6 +63,7 @@ button:hover {
   color: var(--icon-color-3);
   border-color: var(--icon-color-2);
   box-shadow: 0px 0px 5px var(--icon-color-3);
+  cursor: pointer;
 }
 
 button:not(:hover) {
@@ -235,6 +239,7 @@ button:not(:hover) {
   transition: border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
   transform: translate(0.06em, 0.06em);
   color: var(--icon-color-3);
+  cursor: pointer;
 }
 
 #header li:not(:hover) {
@@ -245,6 +250,7 @@ button:not(:hover) {
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
+  justify-self: flex-end;
   align-items: center;
   background-color: var(--alt-bg-1);
   /* color: var(--alt-text-1); */
@@ -271,6 +277,7 @@ button:not(:hover) {
   transition: border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
   transform: translate(0.06em, 0.06em);
   color: var(--icon-color-3);
+  cursor: pointer;
 }
 
 #footer li:not(:hover) {
@@ -335,6 +342,7 @@ button:not(:hover) {
   color: var(--icon-color-3);
   border-color: var(--icon-color-2);
   box-shadow: 0px 0px 5px var(--icon-color-3);
+  cursor: pointer;
 }
 
 .shop-card:not(:hover) {

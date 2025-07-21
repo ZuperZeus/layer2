@@ -1,8 +1,9 @@
 [
   {
     "title": "Go By Bike Keychain",
+    "id": "keychain_bike",
     "section": "keychain",
-    "folder": "keychain_bike",
+    "description":"This is a custom keychain made for Go By Bike in 2025. It can be made with your custom logo.",
     "price": 14.99,
     "colours": ["multicolor"],
     "available": true
@@ -10,7 +11,8 @@
   {
     "title": "Narwhal Keychain",
     "section": "keychain",
-    "folder": "keychain_narwhal",
+    "id": "keychain_narwhal",
+    "description":"A cute multicolour narwhal that moves!",
     "price": 4.99,
     "colours": ["gray", "red", "blue"],
     "available": true
@@ -18,7 +20,8 @@
   {
     "title": "Dumpling Keychain",
     "section": "keychain",
-    "folder": "keychain_dumpling",
+    "id": "keychain_dumpling",
+    "description":"A cute dumpling! Get them hot!",
     "price": 9.99,
     "colours": ["green", "yellow", "black", "blue"],
     "available": true
@@ -26,31 +29,26 @@
   {
     "title": "Country Keychain",
     "section": "keychain",
-    "folder": "keychain_country",
+    "id": "keychain_country",
     "price": 4.99,
+    "description":"A keychain of a country's outline! Any country!",
     "colours": ["green", "yellow", "black", "blue"],
     "available": true
   },
   {
     "title": "Geometric Heart Keychain",
     "section": "keychain",
-    "folder": "keychain_heart",
+    "id": "keychain_heart",
+    "description":"An abstract, minimalist keychain designed in-house.",
     "price": 4.99,
     "colours": ["white", "pink", "black"],
     "available": true
   },
   {
-    "title": "Canada Keychain",
-    "section": "keychain",
-    "folder": "keychain_canada",
-    "price": 4.99,
-    "colours": ["red", "white"],
-    "available": true
-  },
-  {
     "title": "Flexible Flag Keychain",
     "section": "keychain",
-    "folder": "keychain_flag",
+    "id": "keychain_flag",
+    "description":"The canadian Flag! This flexible design is unique to our fabrication methods.",
     "price": 4.99,
     "colours": ["red", "white"],
     "available": true
@@ -58,7 +56,8 @@
   {
     "title": "Fractal Sierpinski Pyramid Keychain",
     "section": "keychain",
-    "folder": "keychain_sierpinski",
+    "id": "keychain_sierpinski",
+    "description":"Sierpinski's pyramic is a mezmerizing fractal shape that has triangles all the way down. Show your love for math with our multicolour print.",
     "price": 4.99,
     "colours": ["tricolour"],
     "available": true
@@ -66,7 +65,8 @@
   {
     "title": "Spotify Code Keychain",
     "section": "keychain",
-    "folder": "keychain_spotify",
+    "id": "keychain_spotify",
+    "description":"A custom keychain with a spotify song! Carry your favourite songs with you wherever you go!",
     "price": 4.99,
     "colours": ["yellow", "blue", "red"],
     "available": true
@@ -74,7 +74,8 @@
   {
     "title": "Custom Text Keychain",
     "section": "keychain",
-    "folder": "keychain_text",
+    "id": "keychain_text",
+    "description":"Your Name? A Loved ones'? Your dogs'? With this keychain, anything is possible! Choose your custom text and colours!",
     "price": 4.99,
     "colours": ["yellow", "blue", "red"],
     "available": true
@@ -82,7 +83,8 @@
   {
     "title": "Fidget Cube",
     "section": "toy",
-    "folder": "toy_fidget_cube",
+    "id": "toy_fidget_cube",
+    "description":"An endlessly entretaining fidget cube.",
     "price": 14.99,
     "colours": ["yellow", "blue", "red", "white"],
     "available": true
@@ -90,7 +92,8 @@
   {
     "title": "Flexible Shark",
     "section": "toy",
-    "folder": "toy_shark",
+    "id": "toy_shark",
+    "description":"Watch Out! This shark moves!",
     "price": 14.99,
     "colours": ["yellow", "blue", "red", "white"],
     "available": true
@@ -98,7 +101,8 @@
   {
     "title": "Flexible T-Rex",
     "section": "toy",
-    "folder": "toy_trex",
+    "id": "toy_trex",
+    "description":"A colourful T-rex that moves! What more could you ask for?",
     "price": 9.99,
     "colours": ["green", "yellow", "black", "blue"],
     "available": true
@@ -106,15 +110,17 @@
   {
     "title": "Toy Boat",
     "section": "toy",
-    "folder": "toy_boat",
+    "id": "toy_boat",
+    "description":"A toy boat, in different designs and colours",
     "price": 9.99,
     "colours": ["green", "yellow", "black", "blue"],
     "available": true
   },
   {
-    "title": "Wind Spinner Ornament",
+    "title": "Wind Spinner",
     "section": "misc",
-    "folder": "wind_spinner",
+    "id": "wind_spinner",
+    "description":"This large spiral spins with the wind, showing off all its colours!",
     "price": 24.99,
     "colours": ["tricolour"],
     "available": true
@@ -122,7 +128,8 @@
   {
     "title": "Tricolour Christmas Ornament",
     "section": "misc",
-    "folder": "decoration_christmas",
+    "id": "decoration_christmas",
+    "description":"A colourful christmas decoration for the tree!",
     "price": 14.99,
     "colours": ["tricolour"],
     "available": true
