@@ -1,12 +1,13 @@
+@use 'css_notice';
 @use 'defs' as *;
 @use 'header_footer';
 @use 'shop';
 @use 'animate';
- /* Comfortaa Font */
+// Comfortaa Font 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
-/* Icons Font */
+// Icons Font 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-/* Color scheme and defaults definitions */
+// Color scheme and defaults definitions 
 
   $step: calc(255/9);
 $dis: 0.02em;
@@ -18,7 +19,7 @@ $popout-text:
               5*$dis 5*$dis rgb(255,(2*$step),0),
               6*$dis 6*$dis rgb(255,(1*$step),0),
               7*$dis 7*$dis rgb(255,(0*$step),0);
-/* WELCOME IMAGE */
+// WELCOME IMAGE 
 .welcome-section .layer2 {
   transform: translate(20%,10%) matrix(1,0.2,0,1,1,0);
   
@@ -40,7 +41,7 @@ $popout-text:
   // text-shadow:0px;
 }
 .welcome-section .studios:hover {
-  @include animate.not;
+  @include animate.animate;
   // transform: translate(-0.06em,-0.06em);
   transform: translate(0.00em,7*$dis) matrix(1,0.15,-1,1,1,0);
   // color: var(-1con-color-3);
@@ -74,36 +75,36 @@ $popout-text:
   justify-content: center;
   align-items: center;
 }
-/* WELCOME IMAGE */
+// WELCOME IMAGE 
 
-/* INSPIRING QUOTE */
-/*.inspiring-quote {
-  padding: 80px 80px 0 80px;
-  background: var(--main-bg);
-}
-.inspiring-quote-box {
-  display: flex;
-  flex-direction: column;
-  background: var(--main-bg);
-  align-content: center;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-.inspiring-quote-text {
-  color: var(--main-text);
-  text-align: center;
-}
-.inspiring-quote-attribution {
-  font-size: 20px;
-  font-family: var(--main-font);
-  color: var(--main-text);
-  font-weight: 900;
-  margin-top: 20px;
-  align-self: flex-end;
-}*/
-/* INSPIRING QUOTE */
+// INSPIRING QUOTE 
+//.inspiring-quote {
+  // padding: 80px 80px 0 80px;
+  // background: var(--main-bg);
+// }
+// .inspiring-quote-box {
+  // display: flex;
+  // flex-direction: column;
+  // background: var(--main-bg);
+  // align-content: center;
+  // max-width: 1000px;
+  // margin: 0 auto;
+// }
+// .inspiring-quote-text {
+  // color: var(--main-text);
+  // text-align: center;
+// }
+// .inspiring-quote-attribution {
+  // font-size: 20px;
+  // font-family: var(--main-font);
+  // color: var(--main-text);
+  // font-weight: 900;
+  // margin-top: 20px;
+  // align-self: flex-end;
+// }
+// INSPIRING QUOTE 
 
-/* CALL TO ACTION */
+// CALL TO ACTION 
 .contact-us-card {
   @include card;
   padding: 50px 60px;

@@ -72,9 +72,9 @@ button:not(:hover) {@include animate.not;}
   margin: 20px 0px 0px 0px;
 }
 
-/*******************/
-/*       TEXT      */
-/*******************/
+//*******************
+//*       TEXT      *
+//*******************
 
 .title {
   font-family: var(--main-font);
@@ -83,8 +83,8 @@ button:not(:hover) {@include animate.not;}
   color: var(--main-text);
   margin: 50px 0px;
   align-self:center;
-  /* Change by using large medium small */
-  /* font-size: 10vmin; */
+  // Change by using large medium small
+  // font-size: 10vmin;
 }
 .title:hover {@include animate.hover-text;}
 .title:not(:hover) {@include animate.not;}
@@ -118,16 +118,16 @@ button:not(:hover) {@include animate.not;}
   font-weight: 900;
 }
 
-/*******************/
-/*     CONTENT     */
-/*******************/
+//*******************
+//*     CONTENT     *
+//*******************
 //A section is made up of title and content
 .section {
   display: flex;
   flex-direction: column;
   // flex: 1;
   // height: 100vh;
-  /* flex-wrap: wrap; */
+  // flex-wrap: wrap;
   margin: 80px;
   align-items: center;
   gap: 20px;
@@ -180,25 +180,25 @@ button:not(:hover) {@include animate.not;}
   font-weight: 900;
   font-size: 1.3em;
   // font-size: 6em;
-  /**** MULTICOLOUR EFFECT ****/
-  /* 6 COLOURS */
+  // MULTICOLOUR EFFECT
+  // 6 COLOURS
   // color: #ffffff00;
   // isolation: isolate;
   // text-shadow: -0.08em  0.08em 0em #ff0000,
   //              -0.00em -0.06em 0em #00ff00,
   //               0.08em  0.08em 0em #0000ff;
   // mix-blend-mode:screen;
-  /**** RED AND BLUE GLITCH EFFECT ****/
+  // RED AND BLUE GLITCH EFFECT
   // color: #ff00ff;
   // color: black;
   // text-shadow: -0.08em -0.08em 0em #ff0000,
               //  0.08em 0.08em 0em #00ffff;
-  /**** POP-OUT RED-YELLOW EFFECT ****/
+  // POP-OUT RED-YELLOW EFFECT
   transform: translate(-0.06em,-0.06em);
   color: var(--icon-color-2);
   text-shadow: 0.06em 0.06em 0em var(--icon-color-3),
                0.12em 0.12em 0em var(--icon-color-4);
-  /**** POP-OUT YELLOW-RED EFFECT ****/
+  // POP-OUT YELLOW-RED EFFECT
   // transform: translate(-0.09em,-0.09em);
   // color: var(--icon-color-4);
   // text-shadow: 0.06em 0.06em 0em var(--icon-color-3),

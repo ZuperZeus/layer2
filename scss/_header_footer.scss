@@ -1,9 +1,4 @@
 @use 'animate';
-/* HEADER & FOOTER */
-/* a.fa { */
-  /* font-size: 60px; */
-  /* color: red; */
-/* } */
 #header {
   display: flex;
   justify-content: space-between;
@@ -47,19 +42,19 @@
 #footer {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  // justify-content: space-between; 
   width: 100vw;
   justify-self: flex-end;
   align-items: center;
   background-color: var(--alt-bg-1);
-  /* color: var(--alt-text-1); */
-  /* font-family: var(--main-font); */
+  // color: var(--alt-text-1);
+  // font-family: var(--main-font);
 }
 .footer-columns {
   width:90%;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  // align-items: center; 
   margin: 30px 50px;
   background-color: var(--alt-bg-1);
   color: var(--alt-text-1);
@@ -82,4 +77,4 @@
   margin:12px;
   color: var(--alt-text-2);
 }
-/* HEADER & FOOTER */
+// HEADER & FOOTER 
