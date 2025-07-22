@@ -9,43 +9,49 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 // Color scheme and defaults definitions 
 
-  $step: calc(255/9);
-$dis: 0.02em;
-$popout-text: 
-              1*$dis 1*$dis 0em rgb(255,(5*$step),0),
+@mixin text-3d-shadow($dis:0.02em)
+{
+  translate: -7*$dis -7*$dis;
+  $step: calc(170/6);
+  text-shadow:  
+              1*$dis 1*$dis 0em rgb(255,(6*$step),0),
               2*$dis 2*$dis 0em rgb(255,(5*$step),0),
-              3*$dis 3*$dis rgb(255,(4*$step),0),
-              4*$dis 4*$dis rgb(255,(3*$step),0),
-              5*$dis 5*$dis rgb(255,(2*$step),0),
-              6*$dis 6*$dis rgb(255,(1*$step),0),
-              7*$dis 7*$dis rgb(255,(0*$step),0);
+              3*$dis 3*$dis 0em rgb(255,(4*$step),0),
+              4*$dis 4*$dis 0em rgb(255,(3*$step),0),
+              5*$dis 5*$dis 0em rgb(255,(2*$step),0),
+              6*$dis 6*$dis 0em rgb(255,(1*$step),0),
+              7*$dis 7*$dis 0em rgb(255,(0*$step),0);
+
+}
 // WELCOME IMAGE 
 .welcome-section .layer2 {
-  transform: translate(20%,10%) matrix(1,0.2,0,1,1,0);
+  // transform: translate(20%,10%) matrix(1,0.2,0,1,1,0);
+  translate: 0 -0.14em;
   
 }
 .welcome-section .studios {
+  @include text-3d-shadow(0.02em);
   //text-shadow: 5px 4px 5px var(--icon-color-3);
-  // translate: -3*$dis -3*$dis;
+  // translate: -0.14em 0;
   // color: rgb(255,(6*$step),0);
   // color: transparent;
-  text-shadow: $popout-text;
   // A: + resize_vertical - resize_reverse_vertical
   // B: + down_skew - up_skew
   // C: + left_skew - right_skew
   // D: + resize_horizontal- resize_reverse_horizontal
   //                A B C D E F
-  transform: matrix(1,0.15,-1,1,1,0);
+  // transform: matrix(1,0.15,-1,1,1,0);
   // animation-duration: infinite;
   // animation: 2s ease-out 0s infinite normal;
   // text-shadow:0px;
 }
 .welcome-section .studios:hover {
-  @include animate.animate;
+  @include animate.start;
   // transform: translate(-0.06em,-0.06em);
-  transform: translate(0.00em,7*$dis) matrix(1,0.15,-1,1,1,0);
+  // transform: translate(0.00em,7*$dis) matrix(1,0.15,-1,1,1,0);
   // color: var(-1con-color-3);
-  text-shadow: none;
+  // text-shadow: none;
+  @include text-3d-shadow(0.01em);
   // 0.06em 0.06em 0em var(--icon-color-4),
               //  0.12em 0.12em 0em var(--icon-color-3);
   // transform: rotateZ(90);

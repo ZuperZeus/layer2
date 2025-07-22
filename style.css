@@ -67,7 +67,7 @@ button {
 }
 
 button:hover {
-  transition: border-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out, text-shadow 0.3s ease-out, transform 0.3s ease-out;
+  transition: border-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out, text-shadow 0.3s ease-out, transform 0.3s ease-out, translate 0.3s ease-out;
   color: var(--icon-color-4);
   transform: translate(3px, 3px);
   border-color: var(--icon-color-4);
@@ -76,7 +76,7 @@ button:hover {
 }
 
 button:not(:hover) {
-  transition: border-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in, text-shadow 0.5s ease-in, transform 0.5s ease-in;
+  transition: border-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in, text-shadow 0.5s ease-in, transform 0.5s ease-in, translate 0.5s ease-in;
 }
 
 .center-button {
@@ -99,14 +99,14 @@ button:not(:hover) {
 }
 
 .title:hover {
-  transition: border-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out, text-shadow 0.3s ease-out, transform 0.3s ease-out;
+  transition: border-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out, text-shadow 0.3s ease-out, transform 0.3s ease-out, translate 0.3s ease-out;
   transform: translate(-0.06em, -0.06em);
   color: var(--icon-color-2);
   text-shadow: 0.06em 0.06em 0em var(--icon-color-3), 0.12em 0.12em 0em var(--icon-color-4);
 }
 
 .title:not(:hover) {
-  transition: border-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in, text-shadow 0.5s ease-in, transform 0.5s ease-in;
+  transition: border-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in, text-shadow 0.5s ease-in, transform 0.5s ease-in, translate 0.5s ease-in;
 }
 
 .large-title {
@@ -209,14 +209,14 @@ button:not(:hover) {
 }
 
 .highlight:hover {
-  transition: border-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out, text-shadow 0.3s ease-out, transform 0.3s ease-out;
+  transition: border-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out, text-shadow 0.3s ease-out, transform 0.3s ease-out, translate 0.3s ease-out;
   transform: translate(0.06em, 0.06em);
   color: var(--icon-color-4);
   text-shadow: none;
 }
 
 .highlight:not(:hover) {
-  transition: border-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in, text-shadow 0.5s ease-in, transform 0.5s ease-in;
+  transition: border-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in, text-shadow 0.5s ease-in, transform 0.5s ease-in, translate 0.5s ease-in;
 }
 
 #header {
@@ -261,14 +261,14 @@ button:not(:hover) {
 }
 
 #header li:hover {
-  transition: border-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out, text-shadow 0.3s ease-out, transform 0.3s ease-out;
+  transition: border-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out, text-shadow 0.3s ease-out, transform 0.3s ease-out, translate 0.3s ease-out;
   transform: translate(0.06em, 0.06em);
   color: var(--icon-color-3);
   cursor: pointer;
 }
 
 #header li:not(:hover) {
-  transition: border-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in, text-shadow 0.5s ease-in, transform 0.5s ease-in;
+  transition: border-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in, text-shadow 0.5s ease-in, transform 0.5s ease-in, translate 0.5s ease-in;
 }
 
 #footer {
@@ -296,14 +296,14 @@ button:not(:hover) {
 }
 
 #footer li:hover {
-  transition: border-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out, text-shadow 0.3s ease-out, transform 0.3s ease-out;
+  transition: border-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out, text-shadow 0.3s ease-out, transform 0.3s ease-out, translate 0.3s ease-out;
   transform: translate(0.06em, 0.06em);
   color: var(--icon-color-3);
   cursor: pointer;
 }
 
 #footer li:not(:hover) {
-  transition: border-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in, text-shadow 0.5s ease-in, transform 0.5s ease-in;
+  transition: border-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in, text-shadow 0.5s ease-in, transform 0.5s ease-in, translate 0.5s ease-in;
 }
 
 .footer-column {
@@ -358,7 +358,7 @@ button:not(:hover) {
 }
 
 .shop-card:hover {
-  transition: border-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out, text-shadow 0.3s ease-out, transform 0.3s ease-out;
+  transition: border-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out, text-shadow 0.3s ease-out, transform 0.3s ease-out, translate 0.3s ease-out;
   color: var(--icon-color-4);
   transform: translate(3px, 3px);
   border-color: var(--icon-color-4);
@@ -367,7 +367,7 @@ button:not(:hover) {
 }
 
 .shop-card:not(:hover) {
-  transition: border-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in, text-shadow 0.5s ease-in, transform 0.5s ease-in;
+  transition: border-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in, text-shadow 0.5s ease-in, transform 0.5s ease-in, translate 0.5s ease-in;
 }
 
 .product-description {
@@ -414,7 +414,7 @@ button:not(:hover) {
 }
 
 .color-card:hover {
-  transition: border-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out, text-shadow 0.3s ease-out, transform 0.3s ease-out;
+  transition: border-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out, text-shadow 0.3s ease-out, transform 0.3s ease-out, translate 0.3s ease-out;
   color: var(--icon-color-4);
   transform: translate(3px, 3px);
   border-color: var(--icon-color-4);
@@ -423,26 +423,26 @@ button:not(:hover) {
 }
 
 .color-card:not(:hover) {
-  transition: border-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in, text-shadow 0.5s ease-in, transform 0.5s ease-in;
+  transition: border-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in, text-shadow 0.5s ease-in, transform 0.5s ease-in, translate 0.5s ease-in;
 }
 
 .welcome-section .layer2 {
-  transform: translate(20%, 10%) matrix(1, 0.2, 0, 1, 1, 0);
+  translate: 0 -0.14em;
 }
 
 .welcome-section .studios {
-  text-shadow: 0.02em 0.02em 0em rgb(255, 141.6666666667, 0), 0.04em 0.04em 0em rgb(255, 141.6666666667, 0), 0.06em 0.06em rgb(255, 113.3333333333, 0), 0.08em 0.08em rgb(255, 85, 0), 0.1em 0.1em rgb(255, 56.6666666667, 0), 0.12em 0.12em rgb(255, 28.3333333333, 0), 0.14em 0.14em rgb(255, 0, 0);
-  transform: matrix(1, 0.15, -1, 1, 1, 0);
+  translate: -0.14em -0.14em;
+  text-shadow: 0.02em 0.02em 0em rgb(255, 170, 0), 0.04em 0.04em 0em rgb(255, 141.6666666667, 0), 0.06em 0.06em 0em rgb(255, 113.3333333333, 0), 0.08em 0.08em 0em rgb(255, 85, 0), 0.1em 0.1em 0em rgb(255, 56.6666666667, 0), 0.12em 0.12em 0em rgb(255, 28.3333333333, 0), 0.14em 0.14em 0em rgb(255, 0, 0);
 }
 
 .welcome-section .studios:hover {
-  transition: border-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out, text-shadow 0.3s ease-out, transform 0.3s ease-out;
-  transform: translate(0em, 0.14em) matrix(1, 0.15, -1, 1, 1, 0);
-  text-shadow: none;
+  transition: border-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out, text-shadow 0.3s ease-out, transform 0.3s ease-out, translate 0.3s ease-out;
+  translate: -0.07em -0.07em;
+  text-shadow: 0.01em 0.01em 0em rgb(255, 170, 0), 0.02em 0.02em 0em rgb(255, 141.6666666667, 0), 0.03em 0.03em 0em rgb(255, 113.3333333333, 0), 0.04em 0.04em 0em rgb(255, 85, 0), 0.05em 0.05em 0em rgb(255, 56.6666666667, 0), 0.06em 0.06em 0em rgb(255, 28.3333333333, 0), 0.07em 0.07em 0em rgb(255, 0, 0);
 }
 
 .welcome-section .studios:not(:hover) {
-  transition: border-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in, text-shadow 0.5s ease-in, transform 0.5s ease-in;
+  transition: border-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in, text-shadow 0.5s ease-in, transform 0.5s ease-in, translate 0.5s ease-in;
 }
 
 .welcome-section {

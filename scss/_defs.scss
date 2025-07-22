@@ -207,7 +207,7 @@ button:not(:hover) {@include animate.not;}
   
 }
 .highlight:hover {
-  @include animate.animate; 
+  @include animate.start; 
   transform: translate(0.06em,0.06em); 
   color: var(--icon-color-4);
   text-shadow:none;

@@ -1,19 +1,31 @@
-@mixin animate {
-  transition: border-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out, text-shadow 0.3s ease-out, transform 0.3s ease-out;
+@mixin start {
+  $speed: 0.3s ease-out;
+  transition: border-color $speed,
+              color $speed, 
+              box-shadow $speed, 
+              text-shadow $speed, 
+              transform $speed,
+              translate $speed;
 }
 @mixin not {
-  transition: border-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in, text-shadow 0.5s ease-in, transform 0.5s ease-in;
+  $speed: 0.5s ease-in;
+  transition: border-color $speed,
+              color $speed, 
+              box-shadow $speed, 
+              text-shadow $speed, 
+              transform $speed,
+              translate $speed;
 }
 @mixin push-text
 {
-  @include animate;
+  @include start;
   transform: translate(0.06em,0.06em);
   color: var(--icon-color-3);
   cursor: pointer;
 }
 @mixin push-button
 {
-  @include animate;
+  @include start;
   // transform: translate(0px,0px);
   // color: var(--icon-color-3);
   // border-color: var(--icon-color-2);
@@ -26,7 +38,7 @@
 }
 @mixin hover-text
 {
-  @include animate;
+  @include start;
   transform: translate(-0.06em,-0.06em);
   color: var(--icon-color-2);
   text-shadow: 0.06em 0.06em 0em var(--icon-color-3),
