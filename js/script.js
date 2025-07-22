@@ -23,7 +23,7 @@ function updateHeaderTextColor() {
   if (scrollY < welcomeBottom-header.offsetHeight/2) {
     responsiveColor = 'var(--alt-text-1)';
   } else {
-    responsiveColor = 'var(--alt-text-1)';
+    responsiveColor = 'var(--main-text)';
   }
   header.style.color = responsiveColor;
 }    
