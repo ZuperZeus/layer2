@@ -29,13 +29,15 @@ function getColorCircle(color)
             colorCircle.style=getTricolorText(color.rgb);
     return colorCircle;
 }
-function updateColorCircle(color)
+function updateColor(color)
 {
-    if(!document.querySelector(".color-selected .color-circle"))
-        document.querySelector(".color-selected").append(getColorCircle(color));
-    else
-        document.querySelector(".color-selected .color-circle").replaceWith(getColorCircle(color));
-
+    let colorCard=document.querySelector(".color-selected");
+    let colorCircle = getColorCircle(color);
+    let colorTxt = document.createElement('div');
+    colorTxt.classList.add('text');
+    colorTxt = colorTxt
+    colorTxt.innerText = `Selected Color: ${color.name}`;
+    colorCard.replaceChildren(colorCircle,colorTxt)
 }
 function generateProductPage() 
 {
@@ -68,25 +70,15 @@ function generateProductPage()
                                   colorCard.addEventListener('click', () => 
                                   {
                                     addURLQuery('color',color.id);
-                                    updateColorCircle(color);
+                                    updateColor(color);
                                   });
                                   //colorCard.href = "/product.html?"+getNewLink('color',color.id);
                                   colorCard.classList.add("color-card");
                                   colorCard.appendChild(getColorCircle(color));
                             colorsDiv.appendChild(colorCard);
-                        })
+                            })
                         const colorSelect = document.querySelector(".color-selected");
                             colorSelect.style.padding = "20px";
-                        const colorTxt = document.createElement("div");
-                            colorTxt.classList.add("text");
-                            colorTxt.classList.add("medium-text");
-                              selectedColor = colors.find(c => c.id === getURLQuery('color'));
-                              if(selectedColor)
-                              {
-                                  colorSelect.appendChild(getColorCircle(selectedColor));
-                                  colorTxt.innerText = "Selected Color: "+selectedColor.name;
-                              }
-                        colorSelect.appendChild(colorTxt);
                     })
             }
             else {
