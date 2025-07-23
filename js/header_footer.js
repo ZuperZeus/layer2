@@ -27,6 +27,7 @@ function updateHeader()
 function updateFooter() 
 {
     const container = document.querySelector('#footer');
+    container.insertAdjacentHTML('beforebegin','<div style="flex-grow:1;"></div>');
     container.innerHTML = `
     <div class="footer-columns">
         <ul class="footer-column">

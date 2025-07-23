@@ -27,12 +27,19 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   margin: 0;
   color: var(--main-text);
   background: var(--main-bg);
   font-family: var(--main-font);
-  overflow: hidden;
+  overflow-x: hidden;
   overflow-y: auto;
+}
+
+body > * {
+  flex: 0 0 auto;
 }
 
 ul {
