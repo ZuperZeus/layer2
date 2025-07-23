@@ -44,10 +44,10 @@
   // animation: 2s ease-out 0s infinite normal;
   // text-shadow:0px;
 }
-.welcome-section .studios:hover {
+// .welcome-section .studios:hover {
   // @include animate.start;
   // @include animate.text-3d-shadow(0.001em,10);
-}
+// }
 // .welcome-section .studios:not(:hover) {@include animate.not}
 .welcome-section::before {
   content: "";
