@@ -25,11 +25,9 @@
 .welcome-section .layer2 {
   // transform: translate(20%,10%) matrix(1,0.2,0,1,1,0);
   translate: 0 -0.1em;
-  // transform: rotateY(-30deg) rotateX(-30deg);
 }
 .welcome-section .studios {
   @include animate.text-3d-shadow(0.01em,10);
-  // transform: rotateY(-30deg) rotateX(60deg);
   //text-shadow: 5px 4px 5px var(--icon-color-3);
   // translate: -0.14em 0;
   // color: rgb(255,(6*$step),0);
@@ -62,7 +60,6 @@
 }
 .welcome-section .studios:not(:hover) {@include animate.not}
 .welcome-section {
-  // perspective: 1000px;
   display: flex;
   flex-direction: column;
   background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9) ), url('/assets/img/start-background.jpg');
