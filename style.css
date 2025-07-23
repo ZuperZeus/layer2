@@ -431,14 +431,14 @@ button:not(:hover) {
 }
 
 .welcome-section .studios {
-  translate: -0.14em -0.14em;
-  text-shadow: 0.02em 0.02em 0em rgb(255, 170, 0), 0.04em 0.04em 0em rgb(255, 141.6666666667, 0), 0.06em 0.06em 0em rgb(255, 113.3333333333, 0), 0.08em 0.08em 0em rgb(255, 85, 0), 0.1em 0.1em 0em rgb(255, 56.6666666667, 0), 0.12em 0.12em 0em rgb(255, 28.3333333333, 0), 0.14em 0.14em 0em rgb(255, 0, 0);
+  translate: -0.25em -0.25em;
+  text-shadow: 0.025em 0.025em 0em rgb(255, 139.0909090909, 0), 0.05em 0.05em 0em rgb(255, 123.6363636364, 0), 0.075em 0.075em 0em rgb(255, 108.1818181818, 0), 0.1em 0.1em 0em rgb(255, 92.7272727273, 0), 0.125em 0.125em 0em rgb(255, 77.2727272727, 0), 0.15em 0.15em 0em rgb(255, 61.8181818182, 0), 0.175em 0.175em 0em rgb(255, 46.3636363636, 0), 0.2em 0.2em 0em rgb(255, 30.9090909091, 0), 0.225em 0.225em 0em rgb(255, 15.4545454545, 0), 0.25em 0.25em 0em rgb(255, 0, 0);
 }
 
 .welcome-section .studios:hover {
   transition: border-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out, text-shadow 0.3s ease-out, transform 0.3s ease-out, translate 0.3s ease-out;
-  translate: -0.07em -0.07em;
-  text-shadow: 0.01em 0.01em 0em rgb(255, 170, 0), 0.02em 0.02em 0em rgb(255, 141.6666666667, 0), 0.03em 0.03em 0em rgb(255, 113.3333333333, 0), 0.04em 0.04em 0em rgb(255, 85, 0), 0.05em 0.05em 0em rgb(255, 56.6666666667, 0), 0.06em 0.06em 0em rgb(255, 28.3333333333, 0), 0.07em 0.07em 0em rgb(255, 0, 0);
+  translate: -0.05em -0.05em;
+  text-shadow: 0.005em 0.005em 0em rgb(255, 139.0909090909, 0), 0.01em 0.01em 0em rgb(255, 123.6363636364, 0), 0.015em 0.015em 0em rgb(255, 108.1818181818, 0), 0.02em 0.02em 0em rgb(255, 92.7272727273, 0), 0.025em 0.025em 0em rgb(255, 77.2727272727, 0), 0.03em 0.03em 0em rgb(255, 61.8181818182, 0), 0.035em 0.035em 0em rgb(255, 46.3636363636, 0), 0.04em 0.04em 0em rgb(255, 30.9090909091, 0), 0.045em 0.045em 0em rgb(255, 15.4545454545, 0), 0.05em 0.05em 0em rgb(255, 0, 0);
 }
 
 .welcome-section .studios:not(:hover) {
