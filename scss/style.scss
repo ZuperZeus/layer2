@@ -45,22 +45,10 @@
   // text-shadow:0px;
 }
 .welcome-section .studios:hover {
-  @include animate.start;
-  // transform: translate(-0.06em,-0.06em);
-  // transform: translate(0.00em,7*$dis) matrix(1,0.15,-1,1,1,0);
-  // color: var(-1con-color-3);
-  // text-shadow: none;
-  @include animate.text-3d-shadow(0.001em,10);
-  // 0.06em 0.06em 0em var(--icon-color-4),
-              //  0.12em 0.12em 0em var(--icon-color-3);
-  // transform: rotateZ(90);
-  // transform: scale(1.2), rotate(180deg);
-  // transform: rotate(180deg);
-  // transform: matrix(0,1,1,0,1,0);
-  // transform: rotate3d(180,0,0);
-  
+  // @include animate.start;
+  // @include animate.text-3d-shadow(0.001em,10);
 }
-.welcome-section .studios:not(:hover) {@include animate.not}
+// .welcome-section .studios:not(:hover) {@include animate.not}
 .welcome-section::before {
   content: "";
   position: absolute;
