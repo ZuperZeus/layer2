@@ -1,4 +1,4 @@
-function createProductCard(item) {
+export function createProductCard(item) {
   const card = document.createElement('a');
   card.href = `/product.html?id=${item.id}`;
 
@@ -13,7 +13,7 @@ function createProductCard(item) {
   // <div class="shop-card-details"></div>
   return card;
 }
-function updateProducts() {
+export function updateProducts() {
   fetch('/data/products.json')
     .then(response => response.json())
     .then(data => {
@@ -29,4 +29,3 @@ function updateProducts() {
       console.error('Error loading products:', error);
     });
 }
-window.addEventListener('DOMContentLoaded', () => updateProducts());

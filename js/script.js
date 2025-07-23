@@ -1,33 +1,12 @@
-function adjustWelcomeHeight() {
-  const header = document.querySelector('#header');
-  const welcome = document.querySelector('.welcome-section');
-  const headerHeight = header.offsetHeight;
-  welcome.style.marginTop = `-${headerHeight}px`;
-  // welcome.style.paddingTop = `${headerHeight}px`;
-}
-
-// Run on load and resize
-window.addEventListener('load', adjustWelcomeHeight);
-window.addEventListener('resize', adjustWelcomeHeight);
-
-function updateHeaderTextColor() {
-  const header = document.querySelector('#header');
-  const welcome = document.querySelector('.welcome-section');
-
-  if (!header || !welcome) return;
-
-  const scrollY = window.scrollY || window.pageYOffset;
-  const welcomeBottom = welcome.offsetTop + welcome.offsetHeight;
-
-  responsiveColor="var(--main-text)";
-  if (scrollY < welcomeBottom-header.offsetHeight/2) {
-    responsiveColor = 'var(--alt-text-1)';
-  } else {
-    responsiveColor = 'var(--main-text)';
-  }
-  header.style.color = responsiveColor;
-}    
-
-// Run on load and scroll
-window.addEventListener('load', updateHeaderTextColor);
-window.addEventListener('scroll', updateHeaderTextColor);
+import * as update_header from './update_header.js';
+import * as header_footer from './header_footer.js';
+import * as shop from './shop.js';
+import * as product_page from './product_page.js';
+window.addEventListener('load', update_header.adjustWelcomeHeight);
+window.addEventListener('resize', update_header.adjustWelcomeHeight);
+window.addEventListener('load', update_header.updateHeaderTextColor);
+window.addEventListener('scroll', update_header.updateHeaderTextColor);
+window.addEventListener('DOMContentLoaded', header_footer.updateHeader);
+window.addEventListener('DOMContentLoaded', header_footer.updateFooter);
+window.addEventListener('DOMContentLoaded', shop.updateProducts);
+window.addEventListener('DOMContentLoaded', product_page.generateProductPage);

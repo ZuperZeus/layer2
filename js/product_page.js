@@ -1,15 +1,15 @@
-function getURLQuery(key) 
+export function getURLQuery(key) 
 {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(key);
 }
-function addURLQuery(key,val)
+export function addURLQuery(key,val)
 {
     const urlParams = new URLSearchParams(window.location.search);
     urlParams.set(key,val);
     window.history.replaceState(`/product.html?${urlParams}`,'',`/product.html?${urlParams}`);
 }
-function getTricolorText(triRGB)
+export function getTricolorText(triRGB)
 {
     const [color1, color2, color3] = triRGB.split(",");
     return `background:
@@ -19,7 +19,7 @@ function getTricolorText(triRGB)
     background-blend-mode: screen; /* or lighten */
     `;
 }
-function getColorCircle(color)
+export function getColorCircle(color)
 {
     const colorCircle = document.createElement('div');
           colorCircle.classList.add("color-circle");
@@ -29,7 +29,7 @@ function getColorCircle(color)
             colorCircle.style=getTricolorText(color.rgb);
     return colorCircle;
 }
-function updateColor(color)
+export function updateColor(color)
 {
     let colorCard=document.querySelector(".color-selected");
     let colorCircle = getColorCircle(color);
@@ -39,7 +39,7 @@ function updateColor(color)
     colorTxt.innerText = `Selected Color: ${color.name}`;
     colorCard.replaceChildren(colorCircle,colorTxt)
 }
-function generateProductPage() 
+export function generateProductPage() 
 {
     const product = fetch('/data/products.json')
         .then(response => response.json())
@@ -89,4 +89,3 @@ function generateProductPage()
             console.error('Error loading products:', error);
         });
 }
-window.addEventListener('DOMContentLoaded', () => generateProductPage());

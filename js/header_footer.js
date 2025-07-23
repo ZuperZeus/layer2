@@ -1,4 +1,4 @@
-function updateHeader() 
+export function updateHeader() 
 {
     const container = document.querySelector('#header');
     container.innerHTML = `
@@ -24,7 +24,7 @@ function updateHeader()
     </ul>
     `;
 }
-function updateFooter() 
+export function updateFooter() 
 {
     const container = document.querySelector('#footer');
     container.innerHTML = `
@@ -56,5 +56,3 @@ function updateFooter()
         </div>
     `;
 }
-window.addEventListener('DOMContentLoaded', () => updateHeader());
-window.addEventListener('DOMContentLoaded', () => updateFooter());
