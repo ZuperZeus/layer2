@@ -1,3 +1,4 @@
+@use 'sass:list';
 @mixin start {
   $speed: 0.3s ease-out;
   transition: border-color $speed,
@@ -16,6 +17,28 @@
               transform $speed,
               translate $speed;
 }
+@mixin text-3d-shadow($dis:0.02em,$steps:10)
+{
+  $step: calc((255*2/3)/($steps));
+  translate: (-(($steps - 1) * $dis)) (-(($steps - 1) * $dis));
+  $text-shadows:();
+  @for $i from 0 to $steps {
+    $curr-shadow: $i*$dis $i*$dis 0em rgb(255,($steps - $i)*$step,0);
+    $text-shadows: list.append($text-shadows,$curr-shadow,comma)
+  }
+  text-shadow: $text-shadows;
+}
+@mixin box-3d-shadow($dis:0.02em,$steps:10)
+{
+  $step: calc((255*2/3)/($steps));
+  translate: (-(($steps - 1) * $dis)) (-(($steps - 1) * $dis));
+  $shadows:();
+  @for $i from 1 through $steps {
+    $curr-shadow: $i*$dis $i*$dis 0em rgb(255,($steps - $i)*$step,0);
+    $shadows: list.append($shadows,$curr-shadow,comma)
+  }
+  box-shadow: $shadows;
+}
 @mixin push-text
 {
   @include start;
@@ -31,7 +54,7 @@
   // border-color: var(--icon-color-2);
   // box-shadow: 0px 0px 5px var(--icon-color-3);
   color: var(--icon-color-4);
-  transform: translate(3px,3px);
+  translate: 4px 4px;
   border-color: var(--icon-color-4);
   box-shadow: 0px 0px 0px #ffffff;
   cursor: pointer;
@@ -39,10 +62,11 @@
 @mixin hover-text
 {
   @include start;
-  transform: translate(-0.06em,-0.06em);
+  @include text-3d-shadow($dis:0.02em,$steps:6);
+  // translate: -0.1em -0.1em;
   color: var(--icon-color-2);
-  text-shadow: 0.06em 0.06em 0em var(--icon-color-3),
-               0.12em 0.12em 0em var(--icon-color-4);
+  // text-shadow: 0.06em 0.06em 0em var(--icon-color-3),
+              //  0.12em 0.12em 0em var(--icon-color-4);
   // transform: translate(-0.03em,-0.03em);
   // text-shadow: 0.03em 0.03em 0.1em var(--icon-color-3);
 }
