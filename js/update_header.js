@@ -1,8 +1,8 @@
 export function adjustWelcomeHeight() {
-  const header = document.querySelector('#header');
-  const welcome = document.querySelector('.welcome-section');
-  const headerHeight = header.offsetHeight;
-  welcome.style.marginTop = `-${headerHeight}px`;
+  const header = $('#header');
+  const welcome = $('.welcome-section');
+  const headerHeight = header.outerHeight();
+  welcome.css('marginTop',`-${headerHeight}px`);
 }
 
 export function updateHeaderTextColor() {
