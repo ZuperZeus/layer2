@@ -46,9 +46,10 @@ img {
 }
 
 button {
+  @include animate.box-3d-shadow(2px,4);
   font-family: var(--main-font);
   font-weight: 900;
-  // border: 2px solid var(--alt-bg-1);
+  border: 2px solid var(--icon-color-2);
   border-radius: 8px;
   // box-shadow: 3px 3px 5px var(--alt-bg-2);
   color: var(--main-text);
@@ -56,10 +57,10 @@ button {
   padding: 8px 30px;
   margin: 20px 0px 0px 0px;
 
-  transform: translate(-3px,-3px);
-  border: 2px solid var(--icon-color-2);
-  box-shadow: 3px 3px 0em var(--icon-color-3),
-              6px 6px 0em var(--icon-color-4);
+  // transform: translate(-3px,-3px);
+  // border: 2px solid var(--icon-color-2);
+  // box-shadow: 3px 3px 0em var(--icon-color-3),
+              // 6px 6px 0em var(--icon-color-4);
 }
 button:hover {@include animate.push-button;}
 button:not(:hover) {@include animate.not;}
@@ -77,10 +78,12 @@ button:not(:hover) {@include animate.not;}
 //*******************
 
 .title {
+  @include animate.text-3d-shadow(0.01em,10);
   font-family: var(--main-font);
   font-weight: 900;
   text-align: center;
-  color: var(--main-text);
+  // color: var(--main-text);
+  color: transparent;
   margin: 50px 0px;
   align-self:center;
   // Change by using large medium small

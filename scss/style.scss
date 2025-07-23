@@ -1,5 +1,4 @@
 @use 'css_notice';
-@use 'sass:list';
 @use 'defs' as *;
 @use 'header_footer';
 @use 'shop';
@@ -10,17 +9,6 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 // Color scheme and defaults definitions 
 
-@mixin text-3d-shadow($dis:0.02em,$steps:10)
-{
-  $step: calc((255*2/3)/($steps + 1));
-  translate: (-($steps * $dis)) (-($steps * $dis));
-  $text-shadows:();
-  @for $i from 1 through $steps {
-    $curr-shadow: $i*$dis $i*$dis 0em rgb(255,($steps - $i)*$step,0);
-    $text-shadows: list.append($text-shadows,$curr-shadow,comma)
-  }
-  text-shadow: $text-shadows;
-}
 // WELCOME IMAGE 
 .welcome-section .layer2 {
   // transform: translate(20%,10%) matrix(1,0.2,0,1,1,0);
@@ -28,7 +16,7 @@
   
 }
 .welcome-section .studios {
-  @include text-3d-shadow(0.025em);
+  @include animate.text-3d-shadow(0.01em,10);
   //text-shadow: 5px 4px 5px var(--icon-color-3);
   // translate: -0.14em 0;
   // color: rgb(255,(6*$step),0);
@@ -48,8 +36,8 @@
   // transform: translate(-0.06em,-0.06em);
   // transform: translate(0.00em,7*$dis) matrix(1,0.15,-1,1,1,0);
   // color: var(-1con-color-3);
+  @include animate.text-3d-shadow(0.001em,10);
   // text-shadow: none;
-  @include text-3d-shadow(0.005em);
   // 0.06em 0.06em 0em var(--icon-color-4),
               //  0.12em 0.12em 0em var(--icon-color-3);
   // transform: rotateZ(90);
