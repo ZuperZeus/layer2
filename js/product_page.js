@@ -41,8 +41,8 @@ export function updateColor(color)
 }
 export function generateProductPage() 
 {
-    if(!(window.location.pathname==="product" ||
-        window.location.pathname==="product.html"))
+    if(!(window.location.pathname==="/product" ||
+        window.location.pathname==="/product.html"))
             return;
     const product = fetch('/data/products.json')
         .then(response => response.json())
