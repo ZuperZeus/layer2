@@ -3,7 +3,7 @@ function adjustWelcomeHeight() {
   const welcome = document.querySelector('.welcome-section');
   const headerHeight = header.offsetHeight;
   welcome.style.marginTop = `-${headerHeight}px`;
-  welcome.style.paddingTop = `${headerHeight}px`;
+  // welcome.style.paddingTop = `${headerHeight}px`;
 }
 
 // Run on load and resize

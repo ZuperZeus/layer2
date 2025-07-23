@@ -428,10 +428,12 @@ button:not(:hover) {
 }
 
 .welcome-section .layer2 {
+  z-index: 3;
   translate: 0 -0.1em;
 }
 
 .welcome-section .studios {
+  z-index: 3;
   translate: -0.09em -0.09em;
   text-shadow: 0em 0em 0em rgb(255, 170, 0), 0.01em 0.01em 0em rgb(255, 153, 0), 0.02em 0.02em 0em rgb(255, 136, 0), 0.03em 0.03em 0em rgb(255, 119, 0), 0.04em 0.04em 0em rgb(255, 102, 0), 0.05em 0.05em 0em rgb(255, 85, 0), 0.06em 0.06em 0em rgb(255, 68, 0), 0.07em 0.07em 0em rgb(255, 51, 0), 0.08em 0.08em 0em rgb(255, 34, 0), 0.09em 0.09em 0em rgb(255, 17, 0);
 }
@@ -446,19 +448,29 @@ button:not(:hover) {
   transition: border-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in, text-shadow 0.5s ease-in, transform 0.5s ease-in, translate 0.5s ease-in;
 }
 
+.welcome-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%; /* Make taller so it scrolls */
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+  z-index: 2;
+  pointer-events: none;
+}
+
 .welcome-section {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("/assets/img/start-background.jpg");
+  background: url("/assets/img/start-background.jpg");
   background-size: cover;
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center top;
-  text-shadow: 2px 2px 2px black;
-  position: 0 relative;
+  background-attachment: fixed;
   z-index: 1;
-  margin-top: -80px;
-  padding-top: 80px;
+  margin-top: -70px;
   font-size: 20vmin;
   color: var(--alt-text-1);
   justify-content: center;
