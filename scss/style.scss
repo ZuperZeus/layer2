@@ -42,13 +42,13 @@
   // animation: 2s ease-out 0s infinite normal;
   // text-shadow:0px;
 }
-.welcome-section .studios:hover {
-  @include animate.start;
+// .welcome-section .studios:hover {
+  // @include animate.start;
   // transform: translate(-0.06em,-0.06em);
   // transform: translate(0.00em,7*$dis) matrix(1,0.15,-1,1,1,0);
   // color: var(-1con-color-3);
   // text-shadow: none;
-  @include animate.text-3d-shadow(0.001em,10);
+  // @include animate.text-3d-shadow(0.001em,10);
   // 0.06em 0.06em 0em var(--icon-color-4),
               //  0.12em 0.12em 0em var(--icon-color-3);
   // transform: rotateZ(90);
@@ -57,7 +57,7 @@
   // transform: matrix(0,1,1,0,1,0);
   // transform: rotate3d(180,0,0);
   
-}
+// }
 .welcome-section .studios:not(:hover) {@include animate.not}
 .welcome-section {
   display: flex;
@@ -67,8 +67,8 @@
   height: 100vh; 
   background-repeat: no-repeat;
   background-position:center top;
+  background-attachment: fixed;
   text-shadow: 2px 2px 2px black;
-  position:0 relative;
   z-index: 1;
   margin-top: -80px;
   padding-top: 80px;
