@@ -64,14 +64,14 @@
   flex-direction: column;
   background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9) ), url('/assets/img/start-background.jpg');
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh; 
   background-repeat: no-repeat;
   background-position:center top;
   text-shadow: 2px 2px 2px black;
   position:0 relative;
   z-index: 1;
-  margin-top: -80px;
-  padding-top: 80px;
+  margin-top: -70px;
 
   font-size: 20vmin;
   color: var(--alt-text-1);
