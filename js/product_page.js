@@ -32,6 +32,12 @@ function getColorCircle(color)
 function updateColor(color)
 {
     let colorCard=document.querySelector(".color-selected");
+    if(!colorCard)
+    {
+        colorCard=document.querySelector('.blank-color-selected');
+        colorCard.classList.replace('blank-color-selected','color-selected');
+        colorCard.classList.add('img-with-description');
+    }
     let colorCircle = getColorCircle(color);
     let colorTxt = document.createElement('div');
     colorTxt.classList.add('text');
@@ -56,7 +62,7 @@ function generateProductPage()
                     <div class="flex-content product-description">
                         <div class="text large-text"><a href="#">${product.description}</a></div>
                         <div class="color-display"></div>
-                        <div class="color-selected img-with-description"></div>
+                        <div class="blank-color-selected"></div>
                         <div class="shop-card-price">Contact for pricing</div>
                     </div>
                 </div>
@@ -77,8 +83,6 @@ function generateProductPage()
                                   colorCard.appendChild(getColorCircle(color));
                             colorsDiv.appendChild(colorCard);
                             })
-                        const colorSelect = document.querySelector(".color-selected");
-                            colorSelect.style.padding = "20px";
                     })
             }
             else {

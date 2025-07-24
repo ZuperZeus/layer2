@@ -405,6 +405,7 @@ button:not(:hover) {
   width: 100%;
   max-width: 364px;
   margin: 40px 0px;
+  padding: 20px;
 }
 
 .color-circle {
